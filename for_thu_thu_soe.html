@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10051f">
+<title>For Thu Thu Soe 💗</title>
+<style>
+:root{--pink:#ff4ecb;--violet:#a855f7;--white:#fff7ff;--muted:#e5c9f6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:var(--white);font-family:ui-rounded,"Trebuchet MS",system-ui,sans-serif;background:#090312;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 50% 25%,#411064 0%,#1b0730 42%,#08020f 100%)}
+body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.3;background-image:radial-gradient(#fff 1px,transparent 1.5px),radial-gradient(#f7a8ff 1px,transparent 1.5px);background-size:79px 79px,113px 113px;background-position:0 0,37px 51px;pointer-events:none}
+.wrap{width:min(100%,520px);margin:auto;padding:24px 18px 34px;min-height:100vh;display:flex;flex-direction:column;align-items:center;text-align:center}
+.top{width:100%;display:flex;justify-content:space-between;align-items:center;color:#d9b5ff;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin:4px 0 28px}
+.pill{border:1px solid #ffffff2c;border-radius:999px;padding:8px 12px;background:#ffffff09}
+.moon{position:absolute;top:88px;right:calc(50% - 165px);width:58px;height:58px;border-radius:50%;background:#e4a7ff;box-shadow:0 0 28px #c44cff,0 0 75px #9b30ff;opacity:.85}
+.moon:after{content:"";position:absolute;left:-10px;top:-4px;width:56px;height:56px;border-radius:50%;background:#260c40}
+.intro{font-size:12px;letter-spacing:4px;color:#ff9fe9;text-transform:uppercase;margin:12px 0 14px}
+h1{font-size:clamp(31px,9vw,45px);line-height:1.12;margin:0;font-weight:800;text-shadow:0 0 12px #ff49d1,0 0 36px #9a38ff}
+.name{display:block;color:#ffb4ee;margin-top:7px}
+.sub{color:#e7c8f5;font-size:15px;line-height:1.65;margin:17px auto 8px;max-width:350px}
+.cat{font-size:94px;line-height:1.25;margin:12px 0 4px;filter:drop-shadow(0 0 18px #ff65dc);animation:float 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-10px) rotate(3deg)}}
+.card{width:100%;margin-top:22px;padding:25px 18px 22px;border:1px solid #f8a7ff55;border-radius:26px;background:linear-gradient(145deg,#ffffff10,#a82bff0b);box-shadow:0 0 28px #9d2bff20,inset 0 0 24px #ff53c30a;backdrop-filter:blur(10px)}
+.question{font-size:clamp(25px,7vw,32px);font-weight:800;line-height:1.3;margin:0 0 10px}
+.question span{color:#ff8fe5;text-shadow:0 0 18px #ff45cf}
+.hint{font-size:13px;color:#d7b6e9;margin:0 0 23px}
+.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+button{border:0;border-radius:999px;padding:14px 25px;min-width:132px;font-size:16px;font-weight:800;cursor:pointer;color:white;transition:transform .18s,box-shadow .18s}
+button:active{transform:scale(.96)}
+.yes{background:linear-gradient(110deg,#ff42bc,#ff658a);box-shadow:0 0 22px #ff40bc88;border:1px solid #ffc4f2}
+.no{background:#180b2a;border:1px solid #c47aff;box-shadow:0 0 18px #a83cff38}
+#response{display:none;margin:22px 0 0;padding:18px 14px;border-radius:18px;background:#ff55d51a;border:1px solid #ff80dd70;color:#ffe7fa;line-height:1.65;animation:appear .35s ease}
+#response.show{display:block}
+@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.signature{margin:26px 0 0;color:#d7a5ef;font-size:13px;letter-spacing:.5px}
+.signature strong{color:#ff8cdd}
+.foot{margin-top:auto;padding-top:38px;font-size:11px;color:#a889bf;letter-spacing:1px}
+.heart{position:fixed;bottom:-30px;pointer-events:none;z-index:4;animation:rise 4s linear forwards;filter:drop-shadow(0 0 8px #ff40c9)}
+@keyframes rise{to{transform:translateY(-110vh) translateX(var(--drift));opacity:0}}
+.spark{color:#ff8de6;position:absolute;font-size:20px;animation:twinkle 2s infinite alternate}
+@keyframes twinkle{from{opacity:.35;transform:scale(.8)}to{opacity:1;transform:scale(1.15)}}
+.smallnote{font-size:12px;color:#c9a9df;margin-top:18px}
+</style>
+</head>
+<body>
+<div class="moon"></div>
+<main class="wrap">
+  <div class="top"><span>✦ A little secret</span><span class="pill">made with ♡</span></div>
+  <div class="intro">This page is only for</div>
+  <h1>Thu Thu Soe<span class="name">💗</span></h1>
+  <p class="sub">I made something small for you…<br>so please read it with a little smile. 🌙</p>
+  <div class="cat" aria-label="cute cat"> ฅ^•ﻌ•^ฅ </div>
+  <section class="card">
+    <p class="question">Can I ask you<br><span>something special?</span></p>
+    <p class="hint">Be honest with me, Thu Thu Soe 🥺</p>
+    <div class="buttons">
+      <button class="yes" id="yesBtn">YES, TELL ME 💖</button>
+      <button class="no" id="noBtn">NO 🙈</button>
+    </div>
+    <div id="response" role="status" aria-live="polite"></div>
+  </section>
+  <p class="signature">No pressure, just a little <strong>feeling</strong> from me. ♡</p>
+  <div class="smallnote">Whatever your answer is, I hope you smile today.</div>
+  <footer class="foot">MADE WITH 💗 FOR THU THU SOE</footer>
+</main>
+<script>
+const response=document.getElementById('response');
+const yes=document.getElementById('yesBtn');
+const no=document.getElementById('noBtn');
+yes.addEventListener('click',()=>{
+ response.innerHTML='💗 <strong>Do you know something, Thu Thu Soe?</strong><br>You make ordinary days feel a little more special. I think I have a crush on you. 🥹🌷<br><br><span style="font-size:13px">No need to answer right away — I just wanted you to know.</span>';
+ response.classList.add('show'); burst();
+});
+no.addEventListener('click',()=>{
+ response.innerHTML='🙈 That’s okay, Thu Thu Soe. No pressure at all!<br>I still hope this little page made you smile. 💜';
+ response.classList.add('show');
+});
+function burst(){
+ const icons=['💗','💖','💕','✨','♡'];
+ for(let i=0;i<24;i++){
+  const el=document.createElement('span');el.className='heart';el.textContent=icons[Math.floor(Math.random()*icons.length)];
+  el.style.left=Math.random()*100+'vw';el.style.setProperty('--drift',(Math.random()*150-75)+'px');
+  el.style.animationDuration=(3+Math.random()*2)+'s';el.style.fontSize=(16+Math.random()*20)+'px';
+  document.body.appendChild(el);setTimeout(()=>el.remove(),5200);
+ }
+}
+setInterval(()=>{if(Math.random()>.35){const el=document.createElement('span');el.className='heart';el.textContent='♡';el.style.left=Math.random()*100+'vw';el.style.setProperty('--drift',(Math.random()*100-50)+'px');el.style.animationDuration='5s';el.style.fontSize='20px';document.body.appendChild(el);setTimeout(()=>el.remove(),5100)}},1800);
+</script>
+</body>
+</html>
